@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BoqController;
+use App\Http\Controllers\SpkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +22,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::resource('spk', SpkController::class)->middleware('auth');
+Route::resource('boq', BoqController::class)->middleware('auth');
 
 require __DIR__ . '/auth.php';

@@ -32,9 +32,9 @@
             <span class="menu-header-text">Main</span>
         </li>
         <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ url('/spk') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Menu 1</div>
+                <div data-i18n="Basic">SPK</div>
             </a>
         </li>
         <li class="menu-item">

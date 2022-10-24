@@ -5,3 +5,7 @@
 .dashboard-logo {
     width: 70px;
 }
+
+.float-right {
+    float: right !important;
+}

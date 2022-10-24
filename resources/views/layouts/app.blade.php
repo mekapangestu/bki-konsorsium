@@ -34,6 +34,7 @@
     <!-- / Layout wrapper -->
 
     @include('layouts.script')
+    @yield('custom-script')
 </body>
 
 </html>
